@@ -33,16 +33,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             function ReadCookie() {
                var allcookies = document.cookie;
                //document.write ("All Cookies : " + allcookies );
+             document.getElementById("p1").innerHTML = "All Cookies : " + allcookies + "\n";
                
                // Get all the cookies pairs in an array
-               cookiearray = allcookies.split(';');
+               //cookiearray = allcookies.split(';');
                
                // Now take key value pair out of this array
-               for(var i=0; i<cookiearray.length; i++) {
-                  name = cookiearray[i].split('=')[0];
-                  value = cookiearray[i].split('=')[1];
-                  document.getElementById("p"+i+1).innerHTML = name + "   :   " +  value + "\n";
-               }
+               //for(var i=0; i<cookiearray.length; i++) {
+              //    name = cookiearray[i].split('=')[0];
+              //    value = cookiearray[i].split('=')[1];
+              //    document.getElementById("p"+i+1).innerHTML = name + "   :   " +  value + "\n";
+              // }
             }
          //-->
  
@@ -82,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <br>
   <br>
   <br>
-  <p> See all cookieshh:</p>
+  <p> See all cookiesp1:</p>
   <br>
         <script>
            window.onload = function() {
@@ -110,12 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p id="p2"> </p>
     <p id="p3"> </p>
     <p id="p4"> </p>
-    <p id="p5"> </p>
-    <p id="p6"> </p>
-    <p id="p7"> </p>
-    <p id="p8"> </p>
-    <p id="p9"> </p>
-    <p id="p10"> </p>
+
  </div>
 </body>
 </html>
