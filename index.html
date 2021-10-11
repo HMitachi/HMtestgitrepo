@@ -11,46 +11,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
  
  <!-- cookie -->
-<script type = "text/javascript">
-  document.cookie = "username =_HMtestcookiezz ; expires=Thu, 18 Dec 2023 12:00:00 UTC;" ;
   <!--
             function DefaultCookie(namef) {
-               document.cookie = namef;
-             
+               document.cookie = namef; 
             }
          //-->
- 
-     
- 
+
  <!--
             function ReadCookie() {
                var allcookies = document.cookie;
-               //document.write ("All Cookies : " + allcookies );
              document.getElementById("p1").innerHTML = "All Cookies : " + allcookies + "\n";
-               
-               // Get all the cookies pairs in an array
-               //cookiearray = allcookies.split(';');
-               
-               // Now take key value pair out of this array
-               //for(var i=0; i<cookiearray.length; i++) {
-              //    name = cookiearray[i].split('=')[0];
-              //    value = cookiearray[i].split('=')[1];
-              //    document.getElementById("p"+i+1).innerHTML = name + "   :   " +  value + "\n";
-              // }
             }
          //-->
- 
- <!--
-            function DeleteCookie() {
-               var now = new Date();
-               now.setMonth( now.getMonth() - 1 );
-               cookievalue = escape(document.myform.customer.value) + ";"
-               
-               document.cookie = "name=" + cookievalue;
-               document.cookie = "expires=" + now.toUTCString() + ";"
-               document.write("Setting Cookies : " + "name=" + cookievalue );
-            }
-          //-->
  
  function customevent1() { dataLayer.push({'event': 'button1-click'});}
   function customevent2() { dataLayer.push({'event': 'button2-click'});}
@@ -74,9 +46,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <br>
         <script>
            window.onload = function() {
-           DefaultCookie("username2=cookie_1; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
-            DefaultCookie("username3=cookie_2; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
-            DefaultCookie("username=4cookie_3; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
+            DefaultCookie("username1=cookie_1; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
+            DefaultCookie("username2=cookie_2; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
+            DefaultCookie("username3=cookie_3; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
+            DefaultCookie("username=4cookie_4; expires=Thu, 18 Dec 2023 12:00:00 UTC;"); 
            ReadCookie();
            }
         </script> 
