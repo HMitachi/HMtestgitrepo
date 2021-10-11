@@ -15,26 +15,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.cookie = "name=" + cookievalue;
  
   <!--
-            function DefaultCookie(name) {
-               document.cookie = name;
+            function DefaultCookie(namef) {
+               document.cookie = namef;
              
             }
          //-->
  
-         <!--
-            function WriteCookie() {
-               if( document.myform.customer.value == "" ) {
-                  alert("Creating cookie with value : HMcookie");
-                cookievalue = "HMcookie";
-               document.cookie = "name=" + cookievalue;
-               document.write ("Setting Cookies : " + "name=" + cookievalue );
-                  return;
-               }
-               cookievalue = escape(document.myform.customer.value) + ";";
-               document.cookie = "name=" + cookievalue;
-               document.write ("Setting Cookies : " + "name=" + cookievalue );
-            }
-         //-->
+     
  
  <!--
             function ReadCookie() {
@@ -82,21 +69,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2>This is testing GA again with cookie code</h2>
  
  <form name = "myform" action = "">
-         Enter name: <input type = "text" name = "customer"/>
-         <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+        
   <br>
-  <br>
-  <br>
-   <br>
-  <br>
-  <br>
-  <p> See all cookiessssss:</p>
+  <p> See all cookiesssssszz:</p>
   <br>
         <script>
            window.onload = function() {
-           DefaultCookie(cookie1); 
-            DefaultCookie(cookie2); 
-            DefaultCookie(cookie3); 
+           DefaultCookie("cookie1"); 
+            DefaultCookie("cookie2"); 
+            DefaultCookie("cookie3"); 
            ReadCookie();
            }
         </script> 
@@ -118,9 +99,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </form> 
  <div<
   <p id="p1"> </p>
-    <p id="p2"> </p>
-    <p id="p3"> </p>
-    <p id="p4"> </p>
 
  </div>
 </body>
