@@ -15,10 +15,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.cookie = "name=" + cookievalue;
  
   <!--
-            function DefaultCookie() {
-               document.cookie = "name=" + "cookievalue1";
-               document.cookie = "name=" + "cookievalue2";
-               document.cookie = "name=" + "cookievalue3";
+            function DefaultCookie(name) {
+               document.cookie = name;
              
             }
          //-->
@@ -92,11 +90,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <br>
   <br>
   <br>
-  <p> See all cookiesp1:</p>
+  <p> See all cookiessssss:</p>
   <br>
         <script>
            window.onload = function() {
-           DefaultCookie(); 
+           DefaultCookie(cookie1); 
+            DefaultCookie(cookie2); 
+            DefaultCookie(cookie3); 
            ReadCookie();
            }
         </script> 
