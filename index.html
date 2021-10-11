@@ -14,6 +14,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   cookievalue = "HMcookie:" + now.toUTCString();
   document.cookie = "name=" + cookievalue;
  
+  <!--
+            function DefaultCookie() {
+               document.cookie = "name=" + "cookievalue1";
+               document.cookie = "name=" + "cookievalue2";
+               document.cookie = "name=" + "cookievalue3";
+             
+            }
+         //-->
+ 
          <!--
             function WriteCookie() {
                if( document.myform.customer.value == "" ) {
@@ -87,6 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <br>
         <script>
            window.onload = function() {
+           DefaultCookie(); 
            ReadCookie();
            }
         </script> 
