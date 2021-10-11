@@ -14,7 +14,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          <!--
             function WriteCookie() {
                if( document.myform.customer.value == "" ) {
-                  alert("Enter some value!");
+                  alert("Creating cookie with value : HMcookie");
+                cookievalue = "HMcookie";
+               document.cookie = "name=" + cookievalue;
+               document.write ("Setting Cookies : " + "name=" + cookievalue );
                   return;
                }
                cookievalue = escape(document.myform.customer.value) + ";";
