@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-
-
- 
- 
  
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -58,11 +52,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
           //-->
  
+ function customevent() { dataLayer.push({'event': 'button1-click'});}
+ 
  </script>  
  <!-- End of cookie-->
  
  
-<title>Hello World</title>
+<title>Cookies with GTM</title>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -70,13 +66,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
- <h1>Hello World</h1>
-<h2>This is testing GA again with cookie code & Onetrust code</h2>
+ <h1>Testing Cookies with GTM</h1>
  
  <form name = "myform" action = "">
-        
-  <br>
-  <p> See all cookiesssssszz:</p>
   <br>
         <script>
            window.onload = function() {
@@ -87,18 +79,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            }
         </script> 
   
-   
- 
-  <br>
-  <br>
-   <br>
-  <br>
-  <br>
-   <br>
-  <br>
-  <br>
-   Enter name: <input type = "text" name = "customer"/>
-         <input type = "button" value = "Delete Cookie" onclick = "DeleteCookie()"/>
+
+ <input type = "button" id = "custombutton1" value = "Create custom event - 1" onclick = "customevent()"/>  <br>  <br>
+   <input type = "button" id = "custombutton2"  value = "Create custom event - 2" onclick = "customevent()"/>  <br>  <br>
+   <input type = "button" id = "custombutton3"  value = "Create custom event - 3" onclick = "customevent()"/>  <br>  <br>
       
   
  </form> 
@@ -106,5 +90,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p id="p1"> </p>
 
  </div>
+ 
+ <a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});">Button 1</a>
+  <a href="#" name="button2" onclick="dataLayer.push({'event': 'button2-click'});">Button 2</a>
+  <a href="#" name="button3" onclick="dataLayer.push({'event': 'button3-click'});">Button 3</a>
 </body>
 </html>
